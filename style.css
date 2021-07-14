@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*------------ 
+  google font 
+--------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------
+ banner area 
+---------------*/
+.banner-area{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #2D25A0;
+    padding: 153px 140px 86px;
+
+}
+ .banner-content h2{
+    font-size: 64px;
+    color: white;
+    line-height: 86px;
+    margin-bottom: 27px;
+
+
+ } 
+
+ .banner-content a{
+    text-decoration: none;
+    
+    color: white;
+    padding:10px 24px 10px 24px;
+    animation: pulse 1s infinite;
+
+
+}
+
+.banner-img img{
+    width: 556px;
+    height: 438px;
+
+}
+/* -------------
+player-card 
+-------------- */
+
+
+.players{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.player{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 37px;
+    grid-column-gap: 37px;
+    
+    
+}
+
+.card-player{
+    width: 330px;
+    height: 445px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    
+}
+.card-player:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+.card-player img{
+    width: 330px;
+    height: 256px;
+    justify-content: center;
+
+}
+.card-player h3{
+    font-weight: bold;
+    font-size: 28px;
+}
+ .card-player .player-info{
+    font-size: 16px;
+    line-height: 26px;
+    
+
+}
+
+
+/*---------------
+ highlite-blog 
+----------------- */
+
+
+.highlite-blog{
+    display: flex;
+    justify-content: space-around;
+    padding: 156px;   
+
+}
+.highlite-content{
+    width: 466px;
+    
+
+} 
+.highlight-title{
+    color: black;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.highlite-content p{
+    margin-bottom: 40px;
+}
+ .highlite-img img{
+    width: 567px;
+    height: 427px;
+
+    
+}
+.highlite-content .highlite-link{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    
+   
+    padding:10px 24px 10px 24px;
+
+}
+
+
+/*-------- 
+   footer 
+----------*/
+footer{
+    text-align: center;
+   margin-bottom: 10px;
+}
+.footer-logo{
+    width: 483px;
+    height: 110px;
+
+}
+ footer p .font-icon{
+    color: #4b4647;
+    font-size: 32px;
+    
+}
+footer h3{
+    font-size: 18px;
+}
+
+
+/*---------------- 
+  link animation
+----------------- */
+
+  
+   @keyframes pulse {
+    
+   
+    100% {
+      background-color: steelblue;
+    }
+  }
+
+  
+  /* responsive for phone */
+
+  @media only screen and (max-width: 668px) {
+    
+/* banner section */
+    .banner-area{
+      
+       
+        flex-direction: column;
+        width: 100%;
+        padding: 40px;
+      
+       
+      
+    }
+    .banner-content{
+        margin-left: 40px;
+    
+    }
+.banner-content h2{
+    margin-top: 0;
+    line-height: 56px;
+    color: white;
+    font-size: 40px;
+}
+
+
+.banner-img img{
+    margin-top: 45px;
+    width: 80%;
+    
+    
+
+}
+
+/* players */
+
+.player, .highlite-blog, .highlite-img, footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 20px;
+
+}
+.player{
+    margin-left: 5px;
+}
+.card-player{
+    margin-top: 5px;
+}
+
+
+
+
+/* highlite-blog */
+.highlite-blog{
+    margin-top: -100px;
+}
+
+.highlite-content{
+   width: 80%;
+   text-align: center;
+   margin-left: 57px;
+   padding: 30px;
+   box-sizing: border-box;
+   
+    
+}
+.highlite-content p{
+    margin-bottom: 20px;
+
+}
+.highlite-blog .highlite-img img{
+    width: 400px;
+    height: 360px;
+    margin-bottom: 20px;
+}
+.highlite-img{
+    margin-bottom: -210px;
+
+}
+
+
+/* footer */
+footer{
+    margin-bottom: 300px;
+    margin-left: 30px;
+
+
+
+
+}
+ .footer-logo {
+
+
+margin-top: 110px;
+    align-items: center;
+    width: 350px;
+}
+
+   
+  }
